@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Allgemein">
+        <EditTextPreference
+            android:defaultValue="@android:string/emptyPhoneNumber"
+            android:key="pref_phone_number"
+            android:selectAllOnFocus="true"
+            android:summary="Nummer der Standheizung"
+            android:title="Telefonnummer" />
+
+        <EditTextPreference
+            android:defaultValue="@string/default_pin"
+            android:key="pref_pin"
+            android:selectAllOnFocus="true"
+            android:summary="PIN der Standheizung"
+            android:title="PIN" />
+
+        <ListPreference
+            android:defaultValue="30"
+            android:entries="@array/durations_minutes"
+            android:entryValues="@array/durations"
+            android:key="pref_duration_minutes"
+            android:summary="In Minuten"
+            android:title="Heizdauer" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
